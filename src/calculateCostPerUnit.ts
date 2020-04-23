@@ -1,4 +1,6 @@
-const calculateCostPerUnit = () => {
+import Ingredient from './models/ingredient';
+
+const calculateCostPerUnit = (ingredient: Ingredient) => {
     return 1;
 }
 
