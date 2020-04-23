@@ -4,12 +4,12 @@
 You are now writing an application to help a pastry factory manage the storage of their ingredients. By having an application that aids in tracking the ingredients, the factory is able to manage their costs better. The expected use case of this client is for them to calculate the `cost per kg`, `total cost`, and `total weight` of a `product`.
 
 **Definitions:**  
-`ingredient`: defined as a raw ingredient in its simplest form. `Water` is a raw ingredient
+`ingredient`: defined as a raw ingredient in its simplest form. `Water` is a raw ingredient  
 `recipe`: defined as an ingredient which is created by other ingredients. Also referred to as a composite ingredient.
 
 For e.g. Mushroom + Egg = Egg Paste (which is a ingredient that has a recipe)
 
-Adding further, Egg Paste + Oil = Omelette (which is a product)
+Adding further, Egg Paste + Oil = Omelette (which is a product)  
 `product`: a product can be created as a result of a combination of raw `ingredients`, or `recipes`.
 
 **Expected Output:**  
