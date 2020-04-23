@@ -1,4 +1,4 @@
-import ingredients from './ingredients'
+import ingredients from './ingredients';
 
 const chocolatePaste = {
     id: 'choc-paste',
