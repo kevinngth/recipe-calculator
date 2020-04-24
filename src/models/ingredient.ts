@@ -1,4 +1,5 @@
-import Recipe from './recipe'
+import Recipe from './recipe';
+
 export default class Ingredient {
     public id: string;
     public name: string;

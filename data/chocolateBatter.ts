@@ -5,7 +5,7 @@ const chocolateBatter = {
     id: 'choc-batter',
     name: 'Chocolate Batter',
     weight: 1300,
-    cost: 14,
+    cost: null,
     recipe: {
         id: '2',
         madeWith: [
