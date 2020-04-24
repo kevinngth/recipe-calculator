@@ -8,29 +8,15 @@ describe("calculateCostPerUnit()", () => {
         expect( calculateCostPerUnit( ingredients[1] ) ).toBe( 0 );
     })
 
-    const costPerUnitChocolatePaste = (): number => {
-        let result: number = 0;
-        chocolatePaste.recipe.madeWith.forEach(ingredient => {
-            const {amt, ingredient: {cost, weight}} = ingredient;
-            result += amt * cost / weight;
-        });
-        return result;
-    }
-
     it("should calculate cost for a recipe", () => {
-        expect( calculateCostPerUnit( chocolatePaste ) ).toBe( costPerUnitChocolatePaste() );
+        expect( calculateCostPerUnit( chocolatePaste ) ).toBe( 14 );
     })
 
     it("should calculate cost for a product", () => {
-        let result: number = 0;
-        chocolateBatter.recipe.madeWith.forEach(ingredient => {
-            if (ingredient.id === '1') {
-                result += ingredient.amt * costPerUnitChocolatePaste() / ingredient.ingredient.weight;
-            } else {
-                const {amt, ingredient: {cost, weight}} = ingredient;
-                result += amt * cost / weight;
-            }
-        });
-        expect( calculateCostPerUnit( chocolateBatter ) ).toBe( result );
+        expect( calculateCostPerUnit( chocolateBatter ) ).toBe( 26.87 );
+    })
+
+    it("should calculate cost of chocolate cake", () => {
+        expect( calculateCostPerUnit( chocolateCake ) ).toBe( 30.87 );
     })
 });

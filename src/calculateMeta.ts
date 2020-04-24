@@ -3,7 +3,7 @@ import calculateCostPerUnit from './calculateCostPerUnit'
 
 const calculateMeta = (ingredient: Ingredient) => {
     const {cost, weight} = ingredient;
-    const costPerUnit = parseFloat( calculateCostPerUnit(ingredient).toFixed(2) );
+    const costPerUnit = calculateCostPerUnit(ingredient);
     return {cost, weight, costPerUnit};
 }
 
