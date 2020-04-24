@@ -6,6 +6,6 @@ export default class Recipe {
 
     constructor(id: string, madeWith: Array<Component>) {
         this.id = id;
-        this.madeWith = name;
+        this.madeWith = madeWith;
     }
 }
